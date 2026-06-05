@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# pronote — thin wrapper around the pronotepy connector
+# Usage: pronote test|query|sync|status [args...]
+set -euo pipefail
+
+# Resolve venv python — try host paths and docker paths
+VENV=""
+for candidate in \
+  "/root/.openclaw/pronote-connector/venv/bin/python3" \
+  "/home/node/.openclaw/pronote-connector/venv-docker/bin/python3" \
+  "/home/node/.openclaw/pronote-connector/venv/bin/python3"; do
+  if [ -x "$candidate" ]; then
+    VENV="$candidate"
+    break
+  fi
+done
+
+if [ -z "$VENV" ]; then
+  echo "❌ Python venv not found. Run:" >&2
+  echo "   python3 -m venv /root/.openclaw/pronote-connector/venv" >&2
+  echo "   /root/.openclaw/pronote-connector/venv/bin/pip install pronotepy" >&2
+  exit 1
+fi
+
+# Resolve symlinks to find the real script directory
+REAL_PATH="$(readlink -f "$0")"
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
+SCRIPT="$SCRIPT_DIR/pronote-connector-pronotepy.py"
+
+exec "$VENV" "$SCRIPT" "$@"
