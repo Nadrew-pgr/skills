@@ -2,20 +2,20 @@
 
 Bienvenue dans le dépôt centralisé de tes **skills d'agents**. Cette structure est conçue pour être directement consommable par des assistants IA (comme Claude, OpenClaw, ou Codex) ou utilisable au sein de ton coffre Obsidian.
 
-Tous les skills sont organisés en deux grands domaines complémentaires : **Build** (conception, ingénierie et automatisation) et **Work** (cadrage, apprentissage, gestion de contenu et intégrations).
+Tous les skills sont organisés en deux grands domaines complémentaires : **Technique** (conception, ingénierie et automatisation) et **Pratique** (cadrage, apprentissage, gestion de contenu et intégrations).
 
 ---
 
 ## 📂 Organisation du Dépôt
 
-### 🚀 1. Domaine **Build/**
+### 🚀 1. Domaine **Technique/**
 Regroupe les compétences liées à la création de logiciels, au dev workflow et aux aspects techniques/sécurité.
 *   **`software-engineering/`** : Pratiques de développement, loops TDD, diagnostics de bugs, rédaction de PRD, génération de tickets et le pack **Codex Dev Workflow**.
 *   **`agentic-ops/`** : Création de sous-agents, de règles, de nouveaux skills et configuration de l'IDE/CLI (Cursor/OpenClaw).
 *   **`security/`** : Outils de scan de vulnérabilités, modélisation de menaces et rapports d'audit de sécurité (SecureCoder).
 *   **`web-and-design/`** : Création d'interfaces premium, scrollytelling 3D et revues visuelles UI/UX.
 
-### 💼 2. Domaine **Work/**
+### 💼 2. Domaine **Pratique/**
 Regroupe les compétences de cadrage, de productivité personnelle, de connecteurs externes et de création de contenu.
 *   **`thinking-and-scoping/`** : Méthodologies de cadrage (grill/interview), plans d'action, structuration de PRD et cadrage de projets.
 *   **`learning/`** : Systèmes d'apprentissage continu (boucles d'apprentissage et deliberate practice).

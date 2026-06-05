@@ -5,7 +5,7 @@ category: work
 rag: include
 ---
 
-## Work
+## Pratique
 
 Skills pour travailler au quotidien : réfléchir, apprendre, capturer, produire du contenu et se connecter à des services.
 

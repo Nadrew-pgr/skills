@@ -5,7 +5,7 @@ category: build
 rag: include
 ---
 
-## Build
+## Technique
 
 Skills pour construire du logiciel, des agents et des expériences numériques.
 
