@@ -1,5 +1,5 @@
 ---
-name: extraction-routing
+name: inbox-routing
 description: Sort and route raw notes and AI extractions from the Inbox into the Vault (Garden, Backlog, etc.).
 version: 1.1.0
 author: Nadrew
